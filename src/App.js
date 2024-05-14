@@ -1,6 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+function MyButton() {
+  return (
+    <button>I'm a button</button>
+  );
+}
 function App() {
   return (
     <div className="App">
@@ -25,6 +31,10 @@ function App() {
           Visit this site if you need Canva designer
         </a>
       </header>
+      <div>
+      <h1>Welcome to my app</h1>
+      <MyButton />
+    </div>
     </div>
   );
 }
