@@ -17,6 +17,13 @@ function App() {
         >
           Learn React
         </a>
+        <a className='App-link'
+          href='https://johngastone.my.canva.site'
+          target='blank'
+          rel='noopener noreferrer'
+        >
+          Visit this site if you need Canva designer
+        </a>
       </header>
     </div>
   );
