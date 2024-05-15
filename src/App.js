@@ -4,8 +4,24 @@ import './App.css';
 
 function MyButton() {
   return (
-    <button>I'm a button</button>
+    <button
+      className='Button'
+      target='_blank'
+      href='https://johngastone.my.canva.site'
+    >John's portfolio</button>
   );
+}
+
+function MyTextField() {
+  return (
+    <div>
+      <h3>Use the text field below to fill in your information</h3>
+      <input type="text" />
+      <div>
+
+      </div>
+    </div>
+  )
 }
 function App() {
   return (
@@ -32,8 +48,9 @@ function App() {
         </a>
       </header>
       <div>
-      <h1>Welcome to my app</h1>
-      <MyButton />
+      <h1>Welcome to my app, click the link below to visit my portfolio</h1>
+        <MyButton />
+        <MyTextField/>
     </div>
     </div>
   );
