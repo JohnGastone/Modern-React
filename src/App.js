@@ -23,6 +23,15 @@ function MyTextField() {
     </div>
   )
 }
+
+const User = {
+  name: 'Mbambadu',
+  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
+  age: 18,
+  imageSize: 100
+}
+
+
 function App() {
   return (
     <div className="App">
@@ -50,7 +59,18 @@ function App() {
       <div>
       <h1>Welcome to my app, click the link below to visit my portfolio</h1>
         <MyButton />
-        <MyTextField/>
+        <MyTextField />
+        <>
+            <h1>{User.name}</h1>
+            <img
+                src={User.imageUrl}
+                alt={'Photo of' + User.name}
+                style={{
+                  width: User.imageSize,
+                  height: User.imageSize
+                }}
+            />
+        </>
     </div>
     </div>
   );
