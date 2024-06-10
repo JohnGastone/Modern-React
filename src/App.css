@@ -28,8 +28,16 @@
   color: #61dafb;
 }
 
-.Button {
-  color: aquamarine;
+.button {
+  color: wheat;
+}
+
+.div {
+  background-color: #282c34;
+}
+
+.h1 {
+  color: whitesmoke;
 }
 
 @keyframes App-logo-spin {

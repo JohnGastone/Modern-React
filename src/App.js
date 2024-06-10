@@ -4,34 +4,9 @@ import './App.css';
 
 function MyButton() {
   return (
-    <button
-      className='Button'
-      target='_blank'
-      href='https://johngastone.my.canva.site'
-    >John's portfolio</button>
+    <button className='button'>I'm a button</button>
   );
 }
-
-function MyTextField() {
-  return (
-    <div>
-      <h3>Use the text field below to fill in your information</h3>
-      <input type="text" />
-      <div>
-
-      </div>
-    </div>
-  )
-}
-
-const User = {
-  name: 'Mbambadu',
-  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
-  age: 18,
-  imageSize: 100
-}
-
-
 function App() {
   return (
     <div className="App">
@@ -55,23 +30,12 @@ function App() {
         >
           Visit this site if you need Canva designer
         </a>
-      </header>
-      <div>
-      <h1>Welcome to my app, click the link below to visit my portfolio</h1>
-        <MyButton />
-        <MyTextField />
-        <>
-            <h1>{User.name}</h1>
-            <img
-                src={User.imageUrl}
-                alt={'Photo of' + User.name}
-                style={{
-                  width: User.imageSize,
-                  height: User.imageSize
-                }}
-            />
-        </>
+        <div className='div'>
+      <h1 className='h1'>Welcome to my app</h1>
+      <MyButton />
     </div>
+      </header>
+      
     </div>
   );
 }
